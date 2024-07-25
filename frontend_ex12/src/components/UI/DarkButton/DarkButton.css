@@ -1,0 +1,40 @@
+.DarkButton {
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px 9px 5px 9px;
+    max-width: 95px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    font-size: 15px;
+    line-height: 100%;
+    align-self: flex-end;
+}
+
+.Regular {
+    border: 1px solid rgb(54, 82, 88);
+    background-color: rgb(54, 82, 88);
+}
+
+.DarkButton:disabled,
+.DarkButton:hover:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.Regular:hover {
+    background-color: rgb(34, 52, 56);
+    border: 1px solid rgb(34, 52, 56);
+}
+
+.DarkVine {
+    background-color: rgb(120,26,58);
+    border: 1px solid rgb(120,26,58);
+}
+
+.DarkVine:hover {
+    background-color: rgb(83, 18, 40);
+    border: 1px solid rgb(83, 18, 40);
+}

@@ -1,0 +1,86 @@
+.UserPhotosPage-container {
+    position: relative;
+}
+
+.UserPhotosPage-background {
+    width: 100%;
+    min-height: calc(100vh - 67px);
+    margin: 0 auto;
+    background-color: rgb(90, 77, 90);
+}
+
+.UserPhotosPage-flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.UserPhotosPage-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.UserPhotosPage-top-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+.UserPhotosPage-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    color: rgba(250, 250, 250, 0.7);
+}
+
+.UserPhotosPage-error-text {
+    color: #f37c7c;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.DarkButton-link {
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 8px 9px 7px 9px;
+    max-width: 133px;
+    color: #322d31;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    border: 1px solid rgb(233 223 231);
+    background-color: rgb(233 223 231);
+    align-self: center;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.DarkButton-link:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 320px) {
+    .UserPhotosPage-top-row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 764px) {
+    .UserPhotosPage-top-row {
+        flex-direction: row;
+    }
+}

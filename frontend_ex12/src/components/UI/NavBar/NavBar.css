@@ -1,0 +1,121 @@
+.NavBar-background {
+    width: 100%;
+    background-color: rgb(50, 45, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar-logo-title {
+    font-family: 'Inspiration', cursive;
+    color: white;
+    font-size: 28px;
+}
+
+.NavBar-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0px;
+    min-width: 300px;
+    align-items: center;
+    gap: 15px;
+    height: 47px;
+}
+
+.NavBar-links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.NavBar-link {
+    color: rgba(250, 250, 250, 0.7);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    line-height: 100%;
+    align-self: baseline;
+    cursor: pointer
+}
+
+.NavBar-link:hover {
+    color: white;
+}
+
+.NavBar-link.active {
+    color: white;
+    font-weight: 700;
+}
+
+.NavBar-username {
+    color: rgba(250, 250, 250, 0.8);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 100%;
+    align-self: baseline;
+    cursor: default;
+    text-decoration: none;
+}
+
+.NavBar-username:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.NavBar-username.active {
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (min-width: 320px) {
+    .NavBar-container {
+        gap: 15px;
+    }
+
+    .NavBar-link,
+    .NavBar-username {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .NavBar-container {
+        gap: 20px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 764px) {
+    .NavBar-container {
+        width: 610px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .NavBar-container {
+        width: 920px;
+    }
+
+    .NavBar-link,
+    .NavBar-username {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .NavBar-container {
+        width: 1230px;
+    }
+}
